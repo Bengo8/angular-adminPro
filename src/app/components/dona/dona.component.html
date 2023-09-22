@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-body">
+    <h3>{{title}}</h3>
+    <div>
+      <canvas *ngIf="data[0] != -1" baseChart class="chart" [data]="doughnutChartData" [type]="doughnutChartType"></canvas>
+      <span *ngIf="data[0] == -1"> Sin datos</span>
+    </div>
+  </div>
+</div>
